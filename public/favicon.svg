@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield -->
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="url(#bgGrad)" />
+  <!-- Nested Screen 1: Desktop monitor shadow & outline -->
+  <rect x="24" y="24" width="80" height="52" rx="6" fill="#090d16" opacity="0.6" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Nested Screen 2: Tablet (Overlapping) -->
+  <rect x="46" y="42" width="54" height="42" rx="5" fill="#11131e" stroke="url(#glowGrad)" stroke-width="2.5"/>
+  <!-- Nested Screen 3: Smartphone (Overlapping front-most) -->
+  <rect x="74" y="56" width="24" height="44" rx="4" fill="#020617" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Smartphone Screen Details -->
+  <circle cx="86" cy="60" r="1.5" fill="#38bdf8" opacity="0.8"/>
+  <rect x="80" y="94" width="12" height="1" rx="0.5" fill="#38bdf8" opacity="0.8"/>
+  <!-- Modern shine reflex overlay -->
+  <path d="M8 38 C32 15, 96 15, 120 38 L120 8 C120 8, 8 8, 8 8 Z" fill="#ffffff" opacity="0.1" />
+</svg>

@@ -8,7 +8,8 @@ import {
   RefreshCw, 
   X, 
   ShieldAlert, 
-  Globe 
+  Globe,
+  ExternalLink
 } from 'lucide-react';
 
 interface Device {
@@ -296,6 +297,17 @@ export default function DeviceFrame({
             <RefreshCw size={13} />
           </button>
 
+          {/* Open in New Tab */}
+          <button 
+            className="device-act-btn" 
+            onClick={() => window.open(url, '_blank')} 
+            title="Open in New Tab"
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            disabled={!url}
+          >
+            <ExternalLink size={13} />
+          </button>
+
           {/* Remove Device */}
           <button 
             className="device-act-btn" 
@@ -346,7 +358,6 @@ export default function DeviceFrame({
                 src={iframeSrc}
                 className="device-iframe"
                 title={`${device.name} simulator`}
-                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
               />
             </>
           )}
